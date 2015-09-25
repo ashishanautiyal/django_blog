@@ -1,0 +1,55 @@
+<script  src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.min.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+
+<div ng-app="phonecatApp">
+
+    <div ng-controller="PhoneListCtrl">
+        <ul>
+            <li ng-repeat="phone in phones">
+              <span>{$ phone.name $}</span>
+              <span>{$ phone.description $}</span>
+              <span>{$ phone.created | date:"shortTime" $}</span>
+              <i class="glyphicon glyphicon-remove" ng-click="remove(phone.pk)"></i>
+              <i class="glyphicon glyphicon-fullscreen" ng-click="showDetail(phone)">update</i>
+              <div class="row"  ng-show="active==phone.pk">
+                      <div class="col-xs-3">
+                        <input type="text" class="form-control" placeholder="Name" ng-model="newitem.n">
+                      </div>
+                      <div class="col-xs-4">
+                        <input type="text" class="form-control" placeholder="Discription" ng-model="newitem.d" >
+                      </div>
+                      <div class="col-xs-2">
+                        <input type="button" class="form-control"  value="Update" ng-click="update(newitem,phone.pk )">
+                      </div>
+                </div>
+            </li>
+        </ul>
+
+
+
+
+
+        <form class="form-inline" ng-submit="addTodo(work)">
+          <div class="form-group">
+            <label for="exampleInputName2">discription</label>
+            <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe" ng-model="work.discription">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail2">Name</label>
+            <input type="text" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com" ng-model="work.name">
+          </div>
+          <button type="submit" class="btn btn-default">Send invitation</button>
+        </form>
+
+    </div>
+
+</div>
+<script  src="/static/app.js" /></script>
