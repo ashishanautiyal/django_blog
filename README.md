@@ -1,11 +1,11 @@
-# Django Experiments w 
+# Django Experiments  
 
-Django experiment is my journey with python and django from very begginer. This is mixture of three technologies
+Django experiment is my journey with python and django from very begginer. This is mixture of these technologies .
 * Python3 - Its awesome 
 * dJango -  A web framework of python 
-* [AngularJS] - HTML enhanced for web apps!
-* [Twitter Bootstrap] - great UI boilerplate for modern web apps
-* [jQuery] - duh
+* AngularJS - HTML enhanced for web apps!
+* Twitter Bootstrap - great UI boilerplate for modern web apps
+* jQuery 
 * html5
 * css3
 * Bower
