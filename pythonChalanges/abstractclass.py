@@ -15,7 +15,7 @@ from abc import ABCMeta, abstractmethod
 
 class Human(object):
     __metaclass__ = ABCMeta
-
+    #abstarct class is a decorator . need to learn decorator deeply
     @abstractmethod
     def run(self):
         pass
@@ -29,7 +29,7 @@ class Robot(object):
 
 
 class Cyborg(Human, Robot):
-
+    #overriding of both classes abstract method
     def run(self):
         print('cyborg is running')
 
