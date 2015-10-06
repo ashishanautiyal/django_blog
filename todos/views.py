@@ -14,7 +14,6 @@ import time
 import datetime
 
 def datetime_to_milliseconds(some_datetime_object):
-    import  pdb; pdb.set_trace()
     timetuple = some_datetime_object.timetuple()
     timestamp = time.mktime(timetuple)
     return timestamp * 1000.0
