@@ -53,7 +53,7 @@ class Weapon():
     pass
 
 
-## ======================================
+## ====================================== ==
 if __name__ == '__main__':
 	enemy = Enemy()
 	print (enemy.attackDamage)
